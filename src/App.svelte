@@ -1,8 +1,11 @@
 <script>
   let name = "";
   let email = "";
+  let state = "";
   function submitEmail() {
     console.log(email);
+    state = "sent";
+    console.log(state);
   }
 </script>
 
@@ -45,9 +48,11 @@
               <div class="contact-wrap w-100 p-lg-5 p-4">
                 <h3 class="mb-4">Sisesta siia enda</h3>
                 <div id="form-message-warning" class="mb-4" />
+                {#if state === "sent"}
                 <div id="form-message-success" class="mb-4">
-                  Your message was sent, thank you!
+                  Korras! Vaata oma emaili varsti!
                 </div>
+                {/if}
                 <form on:submit|preventDefault={submitEmail}>
                   <div class="row">
                     <div class="col-md-12">

@@ -10872,8 +10872,7 @@ textarea.form-control {
   resize: vertical;
 }
 
-#form-message-warning,
-#form-message-success {
+#form-message-warning {
   display: none;
 }
 
