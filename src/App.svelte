@@ -1,9 +1,48 @@
 <script>
+  import { fade, blur, fly, slide, scale } from "svelte/transition";
+  import { quintOut } from "svelte/easing";
+  import { onMount } from 'svelte';
+
+  let ready = false;
+  onMount(() => ready = true);
+
+  const topText = [
+    {
+      id: 1,
+      txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡",
+    },
+    {
+      id: 2,
+      txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
+    },
+    {
+      id: 3,
+      txt: "Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja tundlik teema on? Miks ta tekitab sellist emotsiooni? 🤷🏽‍♂️",
+    },
+    {
+      id: 4,
+      txt: "Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi taas-iseseisvunud. Inimesed kardavad seda, mida nad ei tea.",
+    },
+    {
+      id: 5,
+      txt: "Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas rohkem kogemust. 🔑",
+    },
+    {
+      id: 6,
+      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
+    },
+  ];
+
   let name = "";
   let email = "";
   let state = "";
   function submitEmail() {
-    let data = '{ "email": "' + email + '", "first_namer": "' + name + '", "from_where": "ivo-henri"}';
+    let data =
+      '{ "email": "' +
+      email +
+      '", "first_namer": "' +
+      name +
+      '", "from_where": "ivo-henri"}';
     fetch("https://apps.crewnew.com/api/rest/subscribe2", {
       method: "POST",
       body: data,
@@ -27,36 +66,16 @@
       });
   }
 </script>
-
+{#if ready}
 <section class="ftco-section">
   <div class="container">
     <div class="row justify-content-center">
       <div class="text-center mb-5">
-        <h2 class="heading-section">
-          Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise
-          suurt tegemata? 💡
-        </h2>
-        <h2 class="heading-section">
-          Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja
-          meeldivat keskkonda elamiseks? 🧘🏽‍♂️
-        </h2>
-        <h2 class="heading-section">
-          Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja
-          tundlik teema on? Miks ta tekitab sellist emotsiooni? 🤷🏽‍♂️
-        </h2>
-        <h2 class="heading-section">
-          Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi
-          taas-iseseisvunud. Inimesed kardavad seda, mida nad ei tea.
-        </h2>
-        <h2 class="heading-section">
-          Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas
-          rohkem kogemust. 🔑
-        </h2>
-        <h2 class="heading-section">
-          Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende
-          kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil
-          selliseid vanaisasid on? ❌
-        </h2>
+        {#each topText as text (text.id)}
+          <h2 class="heading-section" in:scale out:fade>
+            {text.txt}
+          </h2>
+        {/each}
       </div>
     </div>
     <div class="row justify-content-center">
@@ -68,49 +87,49 @@
                 <h3 class="mb-4">Sisesta siia enda</h3>
                 <div id="form-message-warning" class="mb-4" />
                 {#if state === "sent"}
-                <div id="form-message-success" class="mb-4">
-                  Korras! Vaata oma emaili varsti!
-                </div>
+                  <div id="form-message-success" class="mb-4">
+                    Korras! Vaata oma emaili varsti! Kui ka 2-3min pärast ei
+                    paista emaili, siis vaata igaks juhuks ka spämmboksi!
+                  </div>
                 {/if}
-               
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          value={name}
-                          on:input={(event) => (name = event.target.value)}
-                          placeholder="Nimi"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-text">ja</div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          class="form-control"
-                          value={email}
-                          on:input={(event) => (email = event.target.value)}
-                          placeholder="E-mail"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-text">Saadan Sulle video lingi.</div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input
-                          type="submit"
-                          value="SAADA!"
-                          class="btn btn-primary"
-                          on:click={submitEmail}
-                        />
-                        <div class="submitting" />
-                      </div>
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        value={name}
+                        on:input={(event) => (name = event.target.value)}
+                        placeholder="Nimi"
+                      />
                     </div>
                   </div>
-   
+                  <div class="form-text">ja</div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        value={email}
+                        on:input={(event) => (email = event.target.value)}
+                        placeholder="E-mail"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-text">Saadan Sulle video lingi.</div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input
+                        type="submit"
+                        value="SAADA!"
+                        class="btn btn-primary"
+                        on:click={submitEmail}
+                      />
+                      <div class="submitting" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-md-6 d-flex align-items-stretch">
@@ -198,7 +217,7 @@
     <a href="https://crewnew.com">Developed by CrewNew.com</a>
   </div>
 </section>
-
+{/if}
 <style>
   .form-text {
     color: white;
