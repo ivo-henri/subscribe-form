@@ -12,23 +12,23 @@
       txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡",
     },
     {
-      id: 2,
+      id: 100,
       txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
     },
     {
-      id: 3,
+      id: 200,
       txt: "Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja tundlik teema on? Miks ta tekitab sellist emotsiooni? 🤷🏽‍♂️",
     },
     {
-      id: 4,
+      id: 300,
       txt: "Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi taas-iseseisvunud. Inimesed kardavad seda, mida nad ei tea.",
     },
     {
-      id: 5,
+      id: 400,
       txt: "Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas rohkem kogemust. 🔑",
     },
     {
-      id: 6,
+      id: 500,
       txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
     },
   ];
@@ -72,7 +72,7 @@
     <div class="row justify-content-center">
       <div class="text-center mb-5">
         {#each topText as text (text.id)}
-          <h2 class="heading-section" in:scale out:fade>
+          <h2 class="heading-section"  transition:scale={{ delay: text.id, duration: 300, easing: quintOut }}>
             {text.txt}
           </h2>
         {/each}
