@@ -1,10 +1,11 @@
 <script>
   import { fade, blur, fly, slide, scale } from "svelte/transition";
   import { quintOut } from "svelte/easing";
-  import { onMount } from 'svelte';
+  import { onMount } from "svelte";
+  import { text } from "svelte/internal";
 
   let ready = false;
-  onMount(() => ready = true);
+  onMount(() => (ready = true));
 
   const topText = [
     {
@@ -33,6 +34,32 @@
     },
   ];
 
+  const bottomText = [
+    {
+      id: 400,
+      txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
+    },
+    {
+      id: 500,
+      txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
+    },
+    {
+      id: 600,
+      txt: "Siin on 5 minutiline video ülevaade kahest täielikult automatiseeritud tööriistast ja selgitus- kuidas ma neid kasutan.",
+    },
+    {
+      id: 700,
+      txt: "✅ 1-3h üles seadmine.",
+    },
+    {
+      id: 800,
+      txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
+    },
+    {
+      id: 900,
+      txt: "Millal sa ärkad ja mõistad, et internetis ringleb terve kuhi lahendusi? 🔐",
+    },
+  ];
   let name = "";
   let email = "";
   let state = "";
@@ -66,145 +93,96 @@
       });
   }
 </script>
-{#if ready}
-<section class="ftco-section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="text-center mb-5">
-        {#each topText as text (text.id)}
-          <h2 class="heading-section"  transition:scale={{ delay: text.id, duration: 300, easing: quintOut }}>
-            {text.txt}
-          </h2>
-        {/each}
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-10">
-        <div class="wrapper">
-          <div class="row no-gutters">
-            <div class="col-md-6">
-              <div class="contact-wrap w-100 p-lg-5 p-4">
-                <h3 class="mb-4">Sisesta siia enda</h3>
-                <div id="form-message-warning" class="mb-4" />
-                {#if state === "sent"}
-                  <div id="form-message-success" class="mb-4">
-                    Korras! Vaata oma emaili varsti! Kui ka 2-3min pärast ei
-                    paista emaili, siis vaata igaks juhuks ka spämmboksi!
-                  </div>
-                {/if}
 
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        value={name}
-                        on:input={(event) => (name = event.target.value)}
-                        placeholder="Nimi"
-                      />
+{#if ready}
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="text-center mb-5">
+          {#each topText as text (text.id)}
+            <h2
+              class="heading-section"
+              transition:scale={{
+                delay: text.id,
+                duration: 500,
+                easing: quintOut,
+              }}
+            >
+              {text.txt}
+            </h2>
+          {/each}
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <div class="wrapper">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <div class="contact-wrap w-100 p-lg-5 p-4">
+                  <h3 class="mb-4">Sisesta siia enda</h3>
+                  <div id="form-message-warning" class="mb-4" />
+                  {#if state === "sent"}
+                    <div id="form-message-success" class="mb-4" in:scale>
+                      Korras! Vaata oma emaili varsti! Kui ka 2-3min pärast ei
+                      paista emaili, siis vaata igaks juhuks ka spämmboksi!
                     </div>
-                  </div>
-                  <div class="form-text">ja</div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        value={email}
-                        on:input={(event) => (email = event.target.value)}
-                        placeholder="E-mail"
-                      />
+                  {:else}
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            value={name}
+                            on:input={(event) => (name = event.target.value)}
+                            placeholder="Nimi"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-text">ja</div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input
+                            type="email"
+                            class="form-control"
+                            value={email}
+                            on:input={(event) => (email = event.target.value)}
+                            placeholder="E-mail"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-text">Saadan Sulle video lingi.</div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input
+                            type="submit"
+                            value="SAADA!"
+                            class="btn btn-primary"
+                            on:click={submitEmail}
+                          />
+                          <div class="submitting" />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                  <div class="form-text">Saadan Sulle video lingi.</div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <input
-                        type="submit"
-                        value="SAADA!"
-                        class="btn btn-primary"
-                        on:click={submitEmail}
-                      />
-                      <div class="submitting" />
-                    </div>
-                  </div>
+                  {/if}
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-stretch">
-              <div class="info-wrap w-100 p-lg-5 p-4 img">
-                <div class="dbox w-100 d-flex align-items-start">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                  />
-                  <div class="text pl-3">
-                    <p>
-                      <span
-                        >Tänaseks olen ma juba pea 5 aastat igapäevaselt
-                        finantsturgudel osalenud. 👨🏽‍💻
-                      </span>
-                    </p>
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="info-wrap w-100 p-lg-5 p-4 img">
+                  {#each bottomText as text (text.id)}
+                  <div class="dbox w-100 d-flex align-items-center" transition:scale={{
+                    delay: 300,
+                    duration: 800,
+                    easing: quintOut,
+                  }}>
+                    <div
+                      class="flex align-items-center justify-content-center"
+                    />
+                    <div class="text pl-3">
+                      <p><span>{text.txt}</span></p>
+                    </div>
                   </div>
-                </div>
-                <div class="dbox w-100 d-flex align-items-start">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                  />
-                  <div class="text pl-3">
-                    <p>
-                      <span
-                        >Selle ajaga on mul tekkinud 2 kapitali kasvatamise
-                        tööriista, mis mulle enim meeldivad. 🧰
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div class="dbox w-100 d-flex align-items-start">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                  />
-                  <div class="text pl-3">
-                    <p>
-                      <span
-                        >Siin on 5 minutiline video ülevaade kahest täielikult
-                        automatiseeritud tööriistast ja selgitus- kuidas ma neid
-                        kasutan.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div class="dbox w-100 d-flex align-items-center">
-                  <div class="flex align-items-center justify-content-center" />
-                  <div class="text pl-3">
-                    <p><span>✅ 1-3h üles seadmine. </span></p>
-                  </div>
-                </div>
-                <div class="dbox w-100 d-flex align-items-center">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                  />
-                  <div class="text pl-3">
-                    <p>
-                      <span
-                        >✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud
-                        ettevõtted.
-                      </span>
-                    </p>
-                  </div>
-                </div>
-                <div class="dbox w-100 d-flex align-items-center">
-                  <div
-                    class="d-flex align-items-center justify-content-center"
-                  />
-                  <div class="text pl-3">
-                    <p>
-                      <span
-                        >Millal sa ärkad ja mõistad, et internetis ringleb terve
-                        kuhi lahendusi? 🔐</span
-                      >
-                    </p>
-                  </div>
+                  {/each}
                 </div>
               </div>
             </div>
@@ -212,12 +190,12 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="crewnew">
-    <a href="https://crewnew.com">Developed by CrewNew.com</a>
-  </div>
-</section>
+    <div class="crewnew">
+      <a href="https://crewnew.com">Developed by CrewNew.com</a>
+    </div>
+  </section>
 {/if}
+
 <style>
   .form-text {
     color: white;
