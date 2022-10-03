@@ -1,4 +1,9 @@
 <script>
+  let name = "";
+  let email = "";
+  function submitEmail() {
+    console.log(email);
+  }
 </script>
 
 <section class="ftco-section">
@@ -14,18 +19,21 @@
           meeldivat keskkonda elamiseks? 🧘🏽‍♂️
         </h2>
         <h2 class="heading-section">
-          Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja tundlik teema on? Miks ta tekitab sellist emotsiooni?  🤷🏽‍♂️
+          Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja
+          tundlik teema on? Miks ta tekitab sellist emotsiooni? 🤷🏽‍♂️
         </h2>
         <h2 class="heading-section">
-          Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi taas-iseseisvunud. 
-Inimesed kardavad seda, mida nad ei tea.
+          Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi
+          taas-iseseisvunud. Inimesed kardavad seda, mida nad ei tea.
         </h2>
         <h2 class="heading-section">
-          Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas rohkem kogemust. 🔑
+          Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas
+          rohkem kogemust. 🔑
         </h2>
         <h2 class="heading-section">
-          Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. 
-Palju meil selliseid vanaisasid on?  ❌
+          Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende
+          kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil
+          selliseid vanaisasid on? ❌
         </h2>
       </div>
     </div>
@@ -40,20 +48,15 @@ Palju meil selliseid vanaisasid on?  ❌
                 <div id="form-message-success" class="mb-4">
                   Your message was sent, thank you!
                 </div>
-                <form
-                  method="POST"
-                  id="contactForm"
-                  name="contactForm"
-                  class="contactForm"
-                >
+                <form on:submit|preventDefault={submitEmail}>
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
                         <input
                           type="text"
                           class="form-control"
-                          name="name"
-                          id="name"
+                          value={name}
+                          on:input={(event) => (name = event.target.value)}
                           placeholder="Nimi"
                         />
                       </div>
@@ -64,9 +67,9 @@ Palju meil selliseid vanaisasid on?  ❌
                         <input
                           type="email"
                           class="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="Email"
+                          value={email}
+                          on:input={(event) => (email = event.target.value)}
+                          placeholder="E-mail"
                         />
                       </div>
                     </div>
@@ -77,6 +80,7 @@ Palju meil selliseid vanaisasid on?  ❌
                           type="submit"
                           value="SAADA!"
                           class="btn btn-primary"
+                          on:click={submitEmail}
                         />
                         <div class="submitting" />
                       </div>
