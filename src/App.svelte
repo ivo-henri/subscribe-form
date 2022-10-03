@@ -3,9 +3,28 @@
   let email = "";
   let state = "";
   function submitEmail() {
-    console.log(email);
-    state = "sent";
-    console.log(state);
+    let data = '{ "email": "' + email + '", "first_namer": "' + name + '", "from_where": "ivo-henri"}';
+    fetch("https://apps.crewnew.com/api/rest/subscribe2", {
+      method: "POST",
+      body: data,
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+        "x-hasura-admin-secret": "Yd3L3tExefP5AUyP",
+      },
+    })
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("An error occurred, please try again!");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        state = "sent";
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 </script>
 
@@ -53,7 +72,7 @@
                   Korras! Vaata oma emaili varsti!
                 </div>
                 {/if}
-                <form on:submit|preventDefault={submitEmail}>
+               
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
@@ -91,7 +110,7 @@
                       </div>
                     </div>
                   </div>
-                </form>
+   
               </div>
             </div>
             <div class="col-md-6 d-flex align-items-stretch">
