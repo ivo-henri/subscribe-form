@@ -117,6 +117,24 @@
         <div class="col-md-10">
           <div class="wrapper">
             <div class="row no-gutters">
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="info-wrap w-100 p-lg-5 p-4 img">
+                  {#each bottomText as text (text.id)}
+                  <div class="dbox w-100 d-flex align-items-center" transition:scale={{
+                    delay: 300,
+                    duration: 800,
+                    easing: quintOut,
+                  }}>
+                    <div
+                      class="flex align-items-center justify-content-center"
+                    />
+                    <div class="text pl-3">
+                      <p><span>{text.txt}</span></p>
+                    </div>
+                  </div>
+                  {/each}
+                </div>
+              </div>
               <div class="col-md-6">
                 <div class="contact-wrap w-100 p-lg-5 p-4">
                   <h3 class="mb-4">Sisesta siia enda</h3>
@@ -167,24 +185,7 @@
                   {/if}
                 </div>
               </div>
-              <div class="col-md-6 d-flex align-items-stretch">
-                <div class="info-wrap w-100 p-lg-5 p-4 img">
-                  {#each bottomText as text (text.id)}
-                  <div class="dbox w-100 d-flex align-items-center" transition:scale={{
-                    delay: 300,
-                    duration: 800,
-                    easing: quintOut,
-                  }}>
-                    <div
-                      class="flex align-items-center justify-content-center"
-                    />
-                    <div class="text pl-3">
-                      <p><span>{text.txt}</span></p>
-                    </div>
-                  </div>
-                  {/each}
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
