@@ -10,54 +10,51 @@
   const topText = [
     {
       id: 1,
-      txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡",
+      txt: "Sa tahad panna raha enda jaoks tööle, kuid ei soovi kulutada aastaid selle õppimiseks?💡",
     },
     {
       id: 100,
-      txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
+      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas lugematul arvul fonde või aktsiaid on terve elu üles sõitnud.",
     },
     {
       id: 200,
-      txt: "Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja tundlik teema on? Miks ta tekitab sellist emotsiooni? 🤷🏽‍♂️",
+      txt: "Palju meil Eestis selliseid vanaisasid on? ❌",
     },
     {
       id: 300,
-      txt: "Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi taas-iseseisvunud. Inimesed kardavad seda, mida nad ei tea.",
+      txt: "Miks? Sest 🇪🇪 taas-iseseisvus alles 31 aastat tagasi ja see valdkond on eestlase jaoks ikka veel uus.",
     },
     {
       id: 400,
-      txt: "Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas rohkem kogemust. 🔑",
+      txt: "Kuidas mina vabanesin ärevusest selles valdkonnas? Tuginedes kommuuni praktilisele kogemusele. 🔑",
     },
     {
       id: 500,
-      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
+      txt: "Tänaseks olen ma juba 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
     },
   ];
 
   const bottomText = [
     {
       id: 400,
-      txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
+      txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰 ",
     },
     {
       id: 500,
-      txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
-    },
-    {
-      id: 600,
       txt: "Siin on 5 minutiline video ülevaade kahest täielikult automatiseeritud tööriistast ja selgitus- kuidas ma neid kasutan.",
     },
     {
+      id: 600,
+      txt: "✅ 1-2h üles seadmine.",
+    },
+    {
       id: 700,
-      txt: "✅ 1-3h üles seadmine.",
+      txt: "✅ Juriidiliselt ja riiklikult reguleeritud ettevõtted.",
     },
     {
       id: 800,
-      txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
-    },
-    {
-      id: 900,
-      txt: "Millal sa ärkad ja mõistad, et internetis ringleb terve kuhi lahendusi? 🔐",
+      txt: "Oktoobris on vabu kohti veel alles ainult 8, ära maga oma võimalust maha ja liitu täna. 🧨
+(7 päeva raha tagasi garantii) ",
     },
   ];
   let name = "";
