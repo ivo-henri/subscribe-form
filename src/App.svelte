@@ -12,7 +12,7 @@
       id: 1,
       txt: "Sa tahad panna raha enda jaoks tööle, kuid ei soovi kulutada aastaid selle õppimiseks?💡",
     },
-];
+  ];
 
   const bottomText = [
     {
@@ -53,8 +53,7 @@
     },
     {
       id: 800,
-      txt: "Oktoobris on vabu kohti veel alles ainult 8, ära maga oma võimalust maha ja liitu täna. 🧨
-(7 päeva raha tagasi garantii) ",
+      txt: "Oktoobris on vabu kohti veel alles ainult 8, ära maga oma võimalust maha ja liitu täna. 🧨 (7 päeva raha tagasi garantii) ",
     },
   ];
   let name = "";
@@ -117,18 +116,21 @@
               <div class="col-md-6 d-flex align-items-stretch">
                 <div class="info-wrap w-100 p-lg-5 p-4 img">
                   {#each bottomText as text (text.id)}
-                  <div class="dbox w-100 d-flex align-items-center" transition:scale={{
-                    delay: 300,
-                    duration: 800,
-                    easing: quintOut,
-                  }}>
                     <div
-                      class="flex align-items-center justify-content-center"
-                    />
-                    <div class="text pl-3">
-                      <p><span>{text.txt}</span></p>
+                      class="dbox w-100 d-flex align-items-center"
+                      transition:scale={{
+                        delay: 300,
+                        duration: 800,
+                        easing: quintOut,
+                      }}
+                    >
+                      <div
+                        class="flex align-items-center justify-content-center"
+                      />
+                      <div class="text pl-3">
+                        <p><span>{text.txt}</span></p>
+                      </div>
                     </div>
-                  </div>
                   {/each}
                 </div>
               </div>
@@ -182,7 +184,6 @@
                   {/if}
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
