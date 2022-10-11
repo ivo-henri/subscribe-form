@@ -12,6 +12,9 @@
       id: 1,
       txt: "Sa tahad panna raha enda jaoks tööle, kuid ei soovi kulutada aastaid selle õppimiseks?💡",
     },
+];
+
+  const bottomText = [
     {
       id: 100,
       txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas lugematul arvul fonde või aktsiaid on terve elu üles sõitnud.",
@@ -32,9 +35,6 @@
       id: 500,
       txt: "Tänaseks olen ma juba 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
     },
-  ];
-
-  const bottomText = [
     {
       id: 400,
       txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰 ",
