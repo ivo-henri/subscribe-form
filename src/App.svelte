@@ -9,7 +9,12 @@
   const topText = [
     {
       id: 1,
+<<<<<<< HEAD
       txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡"},
+=======
+      txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡",
+    },
+>>>>>>> parent of e70efc7 (Update App.svelte)
     {
       id: 100,
       txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
@@ -28,11 +33,17 @@
     },
     {
       id: 500,
+<<<<<<< HEAD
       txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌"},
+=======
+      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
+    },
+>>>>>>> parent of e70efc7 (Update App.svelte)
   ];
 
   const bottomText = [
     {
+<<<<<<< HEAD
       id: 100,
       txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
     },
@@ -62,6 +73,14 @@
       id: 500, txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻" },
     {
       id: 500, txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
+=======
+      id: 400,
+      txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
+    },
+    {
+      id: 500,
+      txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
+>>>>>>> parent of e70efc7 (Update App.svelte)
     },
     {
       id: 600,
@@ -72,13 +91,21 @@
       txt: "✅ 1-3h üles seadmine.",
     },
     {
+<<<<<<< HEAD
       id: 800, txt: "Oktoobris on vabu kohti veel alles ainult 8, ära maga oma võimalust maha ja liitu täna. 🧨 (7 päeva raha tagasi garantii) ", txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
+=======
+      id: 800,
+      txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
+>>>>>>> parent of e70efc7 (Update App.svelte)
     },
     {
       id: 900,
       txt: "Millal sa ärkad ja mõistad, et internetis ringleb terve kuhi lahendusi? 🔐",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e70efc7 (Update App.svelte)
+=======
 >>>>>>> parent of e70efc7 (Update App.svelte)
 =======
 >>>>>>> parent of e70efc7 (Update App.svelte)
