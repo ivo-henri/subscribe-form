@@ -10,50 +10,58 @@
   const topText = [
     {
       id: 1,
-      txt: "Sa tahad panna raha enda jaoks tööle, kuid ei soovi kulutada aastaid selle õppimiseks?💡",
+      txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡",
     },
   ];
 
   const bottomText = [
     {
       id: 100,
-      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas lugematul arvul fonde või aktsiaid on terve elu üles sõitnud.",
+      txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
     },
     {
       id: 200,
-      txt: "Palju meil Eestis selliseid vanaisasid on? ❌",
+      txt: "Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja tundlik teema on? Miks ta tekitab sellist emotsiooni? 🤷🏽‍♂️",
     },
     {
       id: 300,
-      txt: "Miks? Sest 🇪🇪 taas-iseseisvus alles 31 aastat tagasi ja see valdkond on eestlase jaoks ikka veel uus.",
+      txt: "Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi taas-iseseisvunud. Inimesed kardavad seda, mida nad ei tea.",
     },
     {
       id: 400,
-      txt: "Kuidas mina vabanesin ärevusest selles valdkonnas? Tuginedes kommuuni praktilisele kogemusele. 🔑",
+      txt: "Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas rohkem kogemust. 🔑",
     },
     {
       id: 500,
-      txt: "Tänaseks olen ma juba 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
+      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
     },
     {
       id: 400,
-      txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰 ",
+      txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
     },
     {
       id: 500,
-      txt: "Siin on 5 minutiline video ülevaade kahest täielikult automatiseeritud tööriistast ja selgitus- kuidas ma neid kasutan.",
+      txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
     },
     {
       id: 600,
-      txt: "✅ 1-2h üles seadmine.",
+      txt: "Siin on 5 minutiline video ülevaade kahest täielikult automatiseeritud tööriistast ja selgitus- kuidas ma neid kasutan.",
     },
     {
       id: 700,
-      txt: "✅ Juriidiliselt ja riiklikult reguleeritud ettevõtted.",
+      txt: "✅ 1-3h üles seadmine.",
     },
     {
       id: 800,
+<<<<<<< HEAD
       txt: "Oktoobris on vabu kohti veel alles ainult 8, ära maga oma võimalust maha ja liitu täna. 🧨 (7 päeva raha tagasi garantii) ",
+=======
+      txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
+    },
+    {
+      id: 900,
+      txt: "Millal sa ärkad ja mõistad, et internetis ringleb terve kuhi lahendusi? 🔐",
+>>>>>>> parent of e70efc7 (Update App.svelte)
     },
   ];
   let name = "";
