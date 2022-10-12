@@ -10,8 +10,11 @@
     {
       id: 1,
 <<<<<<< HEAD
+<<<<<<< HEAD
       txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡"},
 =======
+=======
+>>>>>>> parent of e70efc7 (Update App.svelte)
       txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡",
     },
 >>>>>>> parent of e70efc7 (Update App.svelte)
@@ -34,8 +37,11 @@
     {
       id: 500,
 <<<<<<< HEAD
+<<<<<<< HEAD
       txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌"},
 =======
+=======
+>>>>>>> parent of e70efc7 (Update App.svelte)
       txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
     },
 >>>>>>> parent of e70efc7 (Update App.svelte)
@@ -43,6 +49,7 @@
 
   const bottomText = [
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
       id: 100,
       txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
@@ -81,6 +88,14 @@
       id: 500,
       txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
 >>>>>>> parent of e70efc7 (Update App.svelte)
+=======
+      id: 400,
+      txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
+    },
+    {
+      id: 500,
+      txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
+>>>>>>> parent of e70efc7 (Update App.svelte)
     },
     {
       id: 600,
@@ -96,6 +111,9 @@
 =======
       id: 800,
       txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
+<<<<<<< HEAD
+>>>>>>> parent of e70efc7 (Update App.svelte)
+=======
 >>>>>>> parent of e70efc7 (Update App.svelte)
     },
     {
@@ -104,6 +122,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of e70efc7 (Update App.svelte)
+=======
 >>>>>>> parent of e70efc7 (Update App.svelte)
 =======
 >>>>>>> parent of e70efc7 (Update App.svelte)
