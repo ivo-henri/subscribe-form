@@ -11,10 +11,9 @@
     {
       id: 1,
       txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡",
+<<<<<<< HEAD
+=======
     },
-  ];
-
-  const bottomText = [
     {
       id: 100,
       txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
@@ -34,6 +33,31 @@
     {
       id: 500,
       txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
+>>>>>>> parent of e70efc7 (Update App.svelte)
+    },
+  ];
+
+  const bottomText = [
+    {
+      id: 100,
+      txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
+    },
+    {
+      id: 200,
+      txt: "Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja tundlik teema on? Miks ta tekitab sellist emotsiooni? 🤷🏽‍♂️",
+    },
+    {
+      id: 300,
+      txt: "Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi taas-iseseisvunud. Inimesed kardavad seda, mida nad ei tea.",
+    },
+    {
+      id: 400,
+<<<<<<< HEAD
+      txt: "Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas rohkem kogemust. 🔑",
+    },
+    {
+      id: 500,
+      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
     },
     {
       id: 400,
@@ -41,6 +65,12 @@
     },
     {
       id: 500,
+=======
+      txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
+    },
+    {
+      id: 500,
+>>>>>>> parent of e70efc7 (Update App.svelte)
       txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
     },
     {
@@ -54,13 +84,19 @@
     {
       id: 800,
 <<<<<<< HEAD
+<<<<<<< HEAD
       txt: "Oktoobris on vabu kohti veel alles ainult 8, ära maga oma võimalust maha ja liitu täna. 🧨 (7 päeva raha tagasi garantii) ",
 =======
+=======
+>>>>>>> parent of e70efc7 (Update App.svelte)
       txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
     },
     {
       id: 900,
       txt: "Millal sa ärkad ja mõistad, et internetis ringleb terve kuhi lahendusi? 🔐",
+<<<<<<< HEAD
+>>>>>>> parent of e70efc7 (Update App.svelte)
+=======
 >>>>>>> parent of e70efc7 (Update App.svelte)
     },
   ];
