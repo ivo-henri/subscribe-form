@@ -107,7 +107,7 @@
     },
     {
 <<<<<<< HEAD
-      id: 800, txt: "Oktoobris on vabu kohti veel alles ainult 8, ära maga oma võimalust maha ja liitu täna. 🧨 (7 päeva raha tagasi garantii) ", txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
+      id: 800, txt: "Ära maga oma võimalust maha ja liitu täna.", txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
 =======
       id: 800,
       txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
