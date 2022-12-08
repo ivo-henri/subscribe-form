@@ -9,130 +9,38 @@
   const topText = [
     {
       id: 1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-      txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡"},
-=======
-=======
->>>>>>> parent of e70efc7 (Update App.svelte)
-      txt: "Kas sa tahad, et su raha kasvaks stabiilselt, ilma selle jaoks ise suurt tegemata? 💡",
-    },
->>>>>>> parent of e70efc7 (Update App.svelte)
-    {
-      id: 100,
-      txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
+      txt: "❌ HARSH REALITY…",
     },
     {
-      id: 200,
-      txt: "Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja tundlik teema on? Miks ta tekitab sellist emotsiooni? 🤷🏽‍♂️",
+      id: 2,
+      txt: "Today, its scientifically proven fact that approximately 90% of people do not know ANY other way of earning income than GOING TO WORK…",
     },
     {
-      id: 300,
-      txt: "Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi taas-iseseisvunud. Inimesed kardavad seda, mida nad ei tea.",
-    },
-    {
-      id: 400,
-      txt: "Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas rohkem kogemust. 🔑",
-    },
-    {
-      id: 500,
-<<<<<<< HEAD
-<<<<<<< HEAD
-      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌"},
-=======
-=======
->>>>>>> parent of e70efc7 (Update App.svelte)
-      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
-    },
->>>>>>> parent of e70efc7 (Update App.svelte)
+      id: 3,
+      txt: "Approximately 80% of ALL these people are absolutely not satisfied with their work, nor are they happy…",
+    }
   ];
 
   const bottomText = [
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
       id: 100,
-      txt: "Kas sa otsid konstantset rahavoogu, mis voimaldaks Sulle rahu ja meeldivat keskkonda elamiseks? 🧘🏽‍♂️",
+      txt: "TODAY, we’re going to speak about:",
     },
     {
       id: 200,
-      txt: "Kas Sa oled kunagi mõelnud, miks Eestis investeerimine nii tabu ja tundlik teema on? Miks ta tekitab sellist emotsiooni? 🤷🏽‍♂️",
+      txt: "✔️ HOW We’ve Earned Big Amounts Of Extra Money",
     },
     {
       id: 300,
-      txt: "Väga lihtsalt põhjusel, sest meie 🇪🇪 riik on alles 31 aastat tagasi taas-iseseisvunud. Inimesed kardavad seda, mida nad ei tea.",
+      txt: "✔️ Our Step-by-Step Plan How To Buy Real Estate In Europe or Bali",
     },
     {
-      id: 400, txt: "Hirmu saab eemaldada, tuginedes kogukonnale, kel on antud valdkonnas rohkem kogemust. 🔑"
-    },
-    {
-      id: 500,
-      txt: "Usas on vanaisad, kes räägivad jõululaua taga, kuidas nende kasutatavad fondid või aktsiad on terve elu üles sõitnud. Palju meil selliseid vanaisasid on? ❌",
-    },
-    {
-      id: 400,
-      txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
-    },
-    {
-      id: 500, txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
-    },
-    {
-      id: 500, txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻" },
-    {
-      id: 500, txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
-=======
-      id: 400,
-      txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
+      id: 400, txt: "✔️ How You Can Do The Same!"
     },
     {
       id: 500,
-      txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
->>>>>>> parent of e70efc7 (Update App.svelte)
-=======
-      id: 400,
-      txt: "Tänaseks olen ma juba pea 5 aastat igapäevaselt finantsturgudel osalenud. 👨🏽‍💻",
-    },
-    {
-      id: 500,
-      txt: "Selle ajaga on mul tekkinud 2 kapitali kasvatamise tööriista, mis mulle enim meeldivad. 🧰",
->>>>>>> parent of e70efc7 (Update App.svelte)
-    },
-    {
-      id: 600,
-      txt: "Siin on 5 minutiline video ülevaade kahest täielikult automatiseeritud tööriistast ja selgitus- kuidas ma neid kasutan.",
-    },
-    {
-      id: 700,
-      txt: "✅ 1-3h üles seadmine.",
-    },
-    {
-<<<<<<< HEAD
-      id: 800, txt: "Ära maga oma võimalust maha ja liitu täna.", txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
-=======
-      id: 800,
-      txt: "✅ Juriidiliselt ja riiklikult (1 nendest) reguleeritud ettevõtted.",
-<<<<<<< HEAD
->>>>>>> parent of e70efc7 (Update App.svelte)
-=======
->>>>>>> parent of e70efc7 (Update App.svelte)
-    },
-    {
-      id: 900,
-      txt: "Millal sa ärkad ja mõistad, et internetis ringleb terve kuhi lahendusi? 🔐",
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of e70efc7 (Update App.svelte)
-=======
->>>>>>> parent of e70efc7 (Update App.svelte)
-=======
->>>>>>> parent of e70efc7 (Update App.svelte)
-=======
->>>>>>> parent of e70efc7 (Update App.svelte)
-=======
->>>>>>> parent of e70efc7 (Update App.svelte)
-    },
+      txt: "WE WILL SEND YOU THE LINK TO THE WEBINAR! ❌",
+    }
   ];
   let name = "";
   let email = "";
@@ -210,6 +118,7 @@
                       </div>
                     </div>
                   {/each}
+                  <a class="left" href="https://youtu.be/hfKpEvk7LMo">youtu.be/hfKpEvk7LMo</a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -281,5 +190,8 @@
   }
   .crewnew {
     text-align: center;
+  }
+  .left {
+    margin-left: 3.5em;
   }
 </style>
