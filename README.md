@@ -1,5 +1,6 @@
 # ivo-henri
 
+* Production: https://subscribe-form-ivo-henri.vercel.app/
 * Subscribers: https://apps.crewnew.com/api/rest/ivo-henri
 * CrewNew Hasura REST -> insert into `hubspot`
 * CrewNew N8N workflow send email:
