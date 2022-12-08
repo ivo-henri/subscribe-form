@@ -129,12 +129,11 @@
               </div>
               <div class="col-md-6">
                 <div class="contact-wrap w-100 p-lg-5 p-4">
-                  <h3 class="mb-4">Sisesta siia enda</h3>
+                  <h3 class="mb-4">Please, enter your…</h3>
                   <div id="form-message-warning" class="mb-4" />
                   {#if state === "sent"}
                     <div id="form-message-success" class="mb-4" in:scale>
-                      Korras! Vaata oma emaili varsti! Kui ka 2-3min pärast ei
-                      paista emaili, siis vaata igaks juhuks ka spämmboksi!
+                      Done! Check your email inbox soon! If the email isn't there in 2-3min then please check also the spambox and click "Not spam"!
                     </div>
                   {:else}
                     <div class="row">
@@ -145,11 +144,11 @@
                             class="form-control"
                             value={name}
                             on:input={(event) => (name = event.target.value)}
-                            placeholder="Nimi"
+                            placeholder="Name"
                           />
                         </div>
                       </div>
-                      <div class="form-text">ja</div>
+                      <div class="form-text">and</div>
                       <div class="col-md-12">
                         <div class="form-group">
                           <input
@@ -157,16 +156,16 @@
                             class="form-control"
                             value={email}
                             on:input={(event) => (email = event.target.value)}
-                            placeholder="E-mail"
+                            placeholder="Email"
                           />
                         </div>
                       </div>
-                      <div class="form-text">Saadan Sulle video lingi.</div>
+                      <div class="form-text">I'll send you the video URL.</div>
                       <div class="col-md-12">
                         <div class="form-group">
                           <input
                             type="submit"
-                            value="SAADA!"
+                            value="SEND!"
                             class="btn btn-primary"
                             on:click={submitEmail}
                           />
