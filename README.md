@@ -1,6 +1,7 @@
 # ivo-henri
 
 Subscribers: https://apps.crewnew.com/api/rest/ivo-henri
+CrewNew Hasura REST -> insert into `hubspot`
 
 ## Technical considerations
 
