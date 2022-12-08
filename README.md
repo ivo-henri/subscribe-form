@@ -7,7 +7,7 @@
 
 ```
 <h3>Hey {{first_name}}!</h3>
-<p>Thank you for your interest! Here is your video url: https://www.youtube.com/watch?v=x_1PNvPQ3MQ&t=29s</p>
+<p>Thank you for your interest! Here is your video url: https://youtu.be/hfKpEvk7LMo</p>
 <p>Cheers,<br>
 Ivo-Henri</p>
 ```

@@ -8,10 +8,6 @@
 
   const topText = [
     {
-      id: 1,
-      txt: "❌ HARSH REALITY…",
-    },
-    {
       id: 2,
       txt: "Today, its scientifically proven fact that approximately 90% of people do not know ANY other way of earning income than GOING TO WORK…",
     },
@@ -81,6 +77,17 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="text-center mb-5">
+          <h2
+              class="heading-section"
+              transition:scale={{
+                delay: text.id,
+                duration: 500,
+                easing: quintOut,
+              }}
+            >
+              <h1 class="main-header">
+                 ❌ HARSH REALITY…
+              </h1>
           {#each topText as text (text.id)}
             <h2
               class="heading-section"
@@ -118,7 +125,6 @@
                       </div>
                     </div>
                   {/each}
-                  <a class="left" href="https://youtu.be/hfKpEvk7LMo">youtu.be/hfKpEvk7LMo</a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -193,5 +199,8 @@
   }
   .left {
     margin-left: 3.5em;
+  }
+  .main-header {
+    size: 4em;
   }
 </style>
