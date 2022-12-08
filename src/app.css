@@ -10649,7 +10649,7 @@ a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  color: #d62196;
+  color: #FDCA40;
 }
 a:hover,
 a:focus {
@@ -10676,7 +10676,7 @@ h5,
 }
 
 .bg-primary {
-  background: #d62196 !important;
+  background: #FDCA40 !important;
 }
 
 .ftco-section {
@@ -10746,21 +10746,21 @@ textarea.form-control {
 }
 
 .contact-wrap {
-  background: #7f279c;
-  background: -moz-linear-gradient(-45deg, #7f279c 0%, #2e279d 100%);
+  background: #2176FF;
+  background: -moz-linear-gradient(-45deg, #2176FF 0%, #2e279d 100%);
   background: -webkit-gradient(
     left top,
     right bottom,
-    color-stop(0%, #7f279c),
+    color-stop(0%, #2176FF),
     color-stop(100%, #2e279d)
   );
-  background: -webkit-linear-gradient(-45deg, #7f279c 0%, #2e279d 100%);
-  background: -o-linear-gradient(-45deg, #7f279c 0%, #2e279d 100%);
-  background: -ms-linear-gradient(-45deg, #7f279c 0%, #2e279d 100%);
-  background: -webkit-linear-gradient(315deg, #7f279c 0%, #2e279d 100%);
-  background: -o-linear-gradient(315deg, #7f279c 0%, #2e279d 100%);
-  background: linear-gradient(135deg, #7f279c 0%, #2e279d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f279c', endColorstr='#2e279d', GradientType=1 );
+  background: -webkit-linear-gradient(-45deg, #2176FF 0%, #2e279d 100%);
+  background: -o-linear-gradient(-45deg, #2176FF 0%, #2e279d 100%);
+  background: -ms-linear-gradient(-45deg, #2176FF 0%, #2e279d 100%);
+  background: -webkit-linear-gradient(315deg, #2176FF 0%, #2e279d 100%);
+  background: -o-linear-gradient(315deg, #2176FF 0%, #2e279d 100%);
+  background: linear-gradient(135deg, #2176FF 0%, #2e279d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2176FF', endColorstr='#2e279d', GradientType=1 );
 }
 .contact-wrap h3 {
   color: #fff;
@@ -10776,7 +10776,7 @@ textarea.form-control {
   left: 0;
   width: 60px;
   height: 3px;
-  background: #d62196;
+  background: #FDCA40;
   content: "";
 }
 
@@ -10843,8 +10843,8 @@ textarea.form-control {
   box-shadow: 0px 10px 20px -6px rgba(0, 0, 0, 0.22) !important;
 }
 .btn.btn-primary {
-  background: #d62196 !important;
-  border-color: #d62196 !important;
+  background: #FDCA40 !important;
+  border-color: #FDCA40 !important;
   color: #fff;
 }
 .btn.btn-primary:hover,
