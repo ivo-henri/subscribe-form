@@ -5,9 +5,9 @@
 * CrewNew N8N workflow send email:
 
 ```
-<h3>Hei {{first_name}}</h3>
-<p>Tänud sulle, et tunned huvi! Siin on video link: https://www.youtube.com/watch?v=x_1PNvPQ3MQ&t=29s</p>
-<p>Tervitades,<br>
+<h3>Hey {{first_name}}!</h3>
+<p>Thank you for your interest! Here is your video url: https://www.youtube.com/watch?v=x_1PNvPQ3MQ&t=29s</p>
+<p>Cheers,<br>
 Ivo-Henri</p>
 ```
 ## Technical considerations
