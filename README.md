@@ -4,6 +4,8 @@
 * Subscribers: https://apps.crewnew.com/api/rest/ivo-henri
 * CrewNew Hasura REST -> insert into `hubspot`
 * CrewNew N8N workflow send email:
+Subject: `Here is Your Webinar`
+Content:
 
 ```
 <h3>Hey {{first_name}}!</h3>

@@ -8,12 +8,20 @@
 
   const topText = [
     {
+      id: 1,
+      txt: "Today,"
+    },
+    {
       id: 2,
-      txt: "Today, its scientifically proven fact that approximately 90% of people do not know ANY other way of earning income than GOING TO WORK…",
+      txt: "Its scientifically proven fact that approximately 90% of people,",
     },
     {
       id: 3,
-      txt: "Approximately 80% of ALL these people are absolutely not satisfied with their work, nor are they happy…",
+      txt: "Do not know ANY other way of earning income, than GOING TO WORK…",
+    },
+    {
+      id: 4,
+      txt: "Approximately 80% of ALL those people are absolutely not satisfied with their work, nor are they happy…"
     }
   ];
 
@@ -35,7 +43,7 @@
     },
     {
       id: 500,
-      txt: "WE WILL SEND YOU THE LINK TO THE WEBINAR! ❌",
+      txt: "WE WILL SEND YOU THE LINK TO THE WEBINAR!",
     }
   ];
   let name = "";
