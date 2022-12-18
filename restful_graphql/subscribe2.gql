@@ -1,0 +1,15 @@
+mutation NewSignup(
+  $email: String = ""
+  $first_namer: String = ""
+  $from_where: String = ""
+) {
+  insert_hubspot_one(
+    object: {
+      first_namer: $first_namer
+      email: $email
+      from_where: $from_where
+    }
+  ) {
+    id
+  }
+}

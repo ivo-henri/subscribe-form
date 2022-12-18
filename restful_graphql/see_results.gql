@@ -1,0 +1,6 @@
+query GetSubscribers {
+  hubspot(where: { from_where: { _eq: "ivo-henri" } }, order_by: { id: desc }) {
+    first_namer
+    email
+  }
+}
